@@ -11,7 +11,37 @@
 		DFC0D27F2B206C5B001656E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D27E2B206C5B001656E3 /* ContentView.swift */; };
 		DFC0D2812B206C5C001656E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC0D2802B206C5C001656E3 /* Assets.xcassets */; };
 		DFC0D2842B206C5C001656E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC0D2832B206C5C001656E3 /* Preview Assets.xcassets */; };
+		DFC0D2912B206C83001656E3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC0D2902B206C83001656E3 /* WidgetKit.framework */; };
+		DFC0D2932B206C83001656E3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC0D2922B206C83001656E3 /* SwiftUI.framework */; };
+		DFC0D2962B206C83001656E3 /* DrinkWaterWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2952B206C83001656E3 /* DrinkWaterWidgetBundle.swift */; };
+		DFC0D2982B206C83001656E3 /* DrinkWaterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */; };
+		DFC0D29A2B206C84001656E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC0D2992B206C84001656E3 /* Assets.xcassets */; };
+		DFC0D29E2B206C84001656E3 /* DrinkWaterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DFC0D28E2B206C83001656E3 /* DrinkWaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFC0D29C2B206C84001656E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFC0D2712B206C5B001656E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFC0D28D2B206C83001656E3;
+			remoteInfo = DrinkWaterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFC0D2A22B206C84001656E3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFC0D29E2B206C84001656E3 /* DrinkWaterWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DFC0D2792B206C5B001656E3 /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +49,13 @@
 		DFC0D27E2B206C5B001656E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFC0D2802B206C5C001656E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC0D2832B206C5C001656E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFC0D28E2B206C83001656E3 /* DrinkWaterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DrinkWaterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC0D2902B206C83001656E3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DFC0D2922B206C83001656E3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DFC0D2952B206C83001656E3 /* DrinkWaterWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterWidgetBundle.swift; sourceTree = "<group>"; };
+		DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterWidget.swift; sourceTree = "<group>"; };
+		DFC0D2992B206C84001656E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFC0D29B2B206C84001656E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFC0D28B2B206C83001656E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC0D2932B206C83001656E3 /* SwiftUI.framework in Frameworks */,
+				DFC0D2912B206C83001656E3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				DFC0D27B2B206C5B001656E3 /* DrinkWater */,
+				DFC0D2942B206C83001656E3 /* DrinkWaterWidget */,
+				DFC0D28F2B206C83001656E3 /* Frameworks */,
 				DFC0D27A2B206C5B001656E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC0D2792B206C5B001656E3 /* DrinkWater.app */,
+				DFC0D28E2B206C83001656E3 /* DrinkWaterWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +116,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DFC0D28F2B206C83001656E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0D2902B206C83001656E3 /* WidgetKit.framework */,
+				DFC0D2922B206C83001656E3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFC0D2942B206C83001656E3 /* DrinkWaterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0D2952B206C83001656E3 /* DrinkWaterWidgetBundle.swift */,
+				DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */,
+				DFC0D2992B206C84001656E3 /* Assets.xcassets */,
+				DFC0D29B2B206C84001656E3 /* Info.plist */,
+			);
+			path = DrinkWaterWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +146,34 @@
 				DFC0D2752B206C5B001656E3 /* Sources */,
 				DFC0D2762B206C5B001656E3 /* Frameworks */,
 				DFC0D2772B206C5B001656E3 /* Resources */,
+				DFC0D2A22B206C84001656E3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DFC0D29D2B206C84001656E3 /* PBXTargetDependency */,
 			);
 			name = DrinkWater;
 			productName = DrinkWater;
 			productReference = DFC0D2792B206C5B001656E3 /* DrinkWater.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DFC0D28D2B206C83001656E3 /* DrinkWaterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC0D29F2B206C84001656E3 /* Build configuration list for PBXNativeTarget "DrinkWaterWidgetExtension" */;
+			buildPhases = (
+				DFC0D28A2B206C83001656E3 /* Sources */,
+				DFC0D28B2B206C83001656E3 /* Frameworks */,
+				DFC0D28C2B206C83001656E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrinkWaterWidgetExtension;
+			productName = DrinkWaterWidgetExtension;
+			productReference = DFC0D28E2B206C83001656E3 /* DrinkWaterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +186,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DFC0D2782B206C5B001656E3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DFC0D28D2B206C83001656E3 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -116,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				DFC0D2782B206C5B001656E3 /* DrinkWater */,
+				DFC0D28D2B206C83001656E3 /* DrinkWaterWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +219,14 @@
 			files = (
 				DFC0D2842B206C5C001656E3 /* Preview Assets.xcassets in Resources */,
 				DFC0D2812B206C5C001656E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC0D28C2B206C83001656E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC0D29A2B206C84001656E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFC0D28A2B206C83001656E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC0D2982B206C83001656E3 /* DrinkWaterWidget.swift in Sources */,
+				DFC0D2962B206C83001656E3 /* DrinkWaterWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFC0D29D2B206C84001656E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFC0D28D2B206C83001656E3 /* DrinkWaterWidgetExtension */;
+			targetProxy = DFC0D29C2B206C84001656E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DFC0D2852B206C5C001656E3 /* Debug */ = {
@@ -267,6 +384,7 @@
 		DFC0D2882B206C5C001656E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +414,7 @@
 		DFC0D2892B206C5C001656E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +441,60 @@
 			};
 			name = Release;
 		};
+		DFC0D2A02B206C84001656E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R29TH66V6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrinkWaterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DrinkWaterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Khawlah-Khalid.DrinkWater.DrinkWaterWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFC0D2A12B206C84001656E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R29TH66V6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrinkWaterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DrinkWaterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Khawlah-Khalid.DrinkWater.DrinkWaterWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +512,15 @@
 			buildConfigurations = (
 				DFC0D2882B206C5C001656E3 /* Debug */,
 				DFC0D2892B206C5C001656E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC0D29F2B206C84001656E3 /* Build configuration list for PBXNativeTarget "DrinkWaterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC0D2A02B206C84001656E3 /* Debug */,
+				DFC0D2A12B206C84001656E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
