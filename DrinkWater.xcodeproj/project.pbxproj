@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF46E7AE2B218CBA009E6FF8 /* CupsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46E7AC2B218CBA009E6FF8 /* CupsInfo.swift */; };
 		DFC0D27D2B206C5B001656E3 /* DrinkWaterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D27C2B206C5B001656E3 /* DrinkWaterApp.swift */; };
 		DFC0D27F2B206C5B001656E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D27E2B206C5B001656E3 /* ContentView.swift */; };
 		DFC0D2812B206C5C001656E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC0D2802B206C5C001656E3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		DFC0D2982B206C83001656E3 /* DrinkWaterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */; };
 		DFC0D29A2B206C84001656E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC0D2992B206C84001656E3 /* Assets.xcassets */; };
 		DFC0D29E2B206C84001656E3 /* DrinkWaterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DFC0D28E2B206C83001656E3 /* DrinkWaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFC0D2A92B20772A001656E3 /* DrinkWaterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2A72B20772A001656E3 /* DrinkWaterIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF46E7AC2B218CBA009E6FF8 /* CupsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupsInfo.swift; sourceTree = "<group>"; };
 		DFC0D2792B206C5B001656E3 /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC0D27C2B206C5B001656E3 /* DrinkWaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterApp.swift; sourceTree = "<group>"; };
 		DFC0D27E2B206C5B001656E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterWidget.swift; sourceTree = "<group>"; };
 		DFC0D2992B206C84001656E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC0D29B2B206C84001656E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC0D2A72B20772A001656E3 /* DrinkWaterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF46E7A82B2186F4009E6FF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0D27E2B206C5B001656E3 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DFC0D2702B206C5B001656E3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC0D27C2B206C5B001656E3 /* DrinkWaterApp.swift */,
-				DFC0D27E2B206C5B001656E3 /* ContentView.swift */,
+				DF46E7A82B2186F4009E6FF8 /* View */,
 				DFC0D2802B206C5C001656E3 /* Assets.xcassets */,
 				DFC0D2822B206C5C001656E3 /* Preview Content */,
 			);
@@ -130,6 +142,8 @@
 			children = (
 				DFC0D2952B206C83001656E3 /* DrinkWaterWidgetBundle.swift */,
 				DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */,
+				DFC0D2A72B20772A001656E3 /* DrinkWaterIntent.swift */,
+				DF46E7AC2B218CBA009E6FF8 /* CupsInfo.swift */,
 				DFC0D2992B206C84001656E3 /* Assets.xcassets */,
 				DFC0D29B2B206C84001656E3 /* Info.plist */,
 			);
@@ -247,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC0D2982B206C83001656E3 /* DrinkWaterWidget.swift in Sources */,
+				DF46E7AE2B218CBA009E6FF8 /* CupsInfo.swift in Sources */,
 				DFC0D2962B206C83001656E3 /* DrinkWaterWidgetBundle.swift in Sources */,
+				DFC0D2A92B20772A001656E3 /* DrinkWaterIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
