@@ -15,7 +15,7 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(),currentCups: 2, totalCups: 8)
+        let entry = SimpleEntry(date: Date(),currentCups: CupsInfo.shared.currentCups, totalCups: CupsInfo.shared.totalCups)
         completion(entry)
     }
 
@@ -26,7 +26,7 @@ struct Provider: TimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate,currentCups: 2, totalCups: 8)
+            let entry = SimpleEntry(date: entryDate,currentCups: CupsInfo.shared.currentCups, totalCups: CupsInfo.shared.totalCups)
             entries.append(entry)
         }
 
@@ -71,17 +71,16 @@ struct DrinkWaterWidgetEntryView : View {
                         .font(.system(size: 50))
                 }
                 if entry.currentCups < entry.totalCups{
-                    Text("Drink")
-                        .bold()
-                        .foregroundStyle(Color.white)
-                        .padding(.horizontal)
-                        .padding(.vertical, 2)
-                        .background{
-                            Color.green
-                        }
-                        .clipShape(Capsule())
+                        Text("Drink")
+                            .bold()
+                            .foregroundStyle(Color.white)
+                            .padding(.horizontal)
+                            .padding(.vertical, 2)
+                            .background{
+                                Color.green
+                            }
+                            .clipShape(Capsule())
                 }
-
             }
         }
     }
