@@ -9,7 +9,7 @@ import Foundation
 import AppIntents
 import SwiftUI
 
-struct DrinkWaterIntent: AppIntent{
+struct DrinkWaterWidgetIntent: AppIntent{
     static var title: LocalizedStringResource = "Drink water"
     func perform() async throws -> some IntentResult {
         print("Button taped !")

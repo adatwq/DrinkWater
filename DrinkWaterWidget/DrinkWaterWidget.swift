@@ -71,7 +71,7 @@ struct DrinkWaterWidgetEntryView : View {
                         .font(.system(size: 50))
                 }
                 if entry.currentCups < entry.totalCups{
-                    Button(intent: DrinkWaterIntent()) {
+                    Button(intent: DrinkWaterWidgetIntent()) {
                         Text("Drink")
                             .bold()
                             .foregroundStyle(Color.white)

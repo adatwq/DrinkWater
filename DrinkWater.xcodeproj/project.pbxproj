@@ -18,7 +18,7 @@
 		DFC0D2982B206C83001656E3 /* DrinkWaterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2972B206C83001656E3 /* DrinkWaterWidget.swift */; };
 		DFC0D29A2B206C84001656E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC0D2992B206C84001656E3 /* Assets.xcassets */; };
 		DFC0D29E2B206C84001656E3 /* DrinkWaterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DFC0D28E2B206C83001656E3 /* DrinkWaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DFC0D2A92B20772A001656E3 /* DrinkWaterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2A72B20772A001656E3 /* DrinkWaterIntent.swift */; };
+		DFCB23302B285DD900AC1F24 /* DrinkWaterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0D2A72B20772A001656E3 /* DrinkWaterIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,8 +262,8 @@
 			files = (
 				DFC0D2982B206C83001656E3 /* DrinkWaterWidget.swift in Sources */,
 				DF46E7AE2B218CBA009E6FF8 /* CupsInfo.swift in Sources */,
+				DFCB23302B285DD900AC1F24 /* DrinkWaterIntent.swift in Sources */,
 				DFC0D2962B206C83001656E3 /* DrinkWaterWidgetBundle.swift in Sources */,
-				DFC0D2A92B20772A001656E3 /* DrinkWaterIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
